@@ -1,2 +1,2 @@
 # JavaUfo
-Building a UFO sites with java for homework
+Building a UFO site with java for homework
