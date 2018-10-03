@@ -29,13 +29,13 @@ submit.on("click", function(filter) {
    var mapper = filteredData.map(date => date.datetime);
    //I forgot to map my filter. Problem is now I have to redefine my variables a little
    
-   var datetime = data.values(datetime);
-   var city = data.values(city);
-   var state = data.values(state);
-   var country = data.values(country);
-   var shape = data.values(shape);
-   var duration = data.values(duration);
-   var comments = data.values(comments);
+   var datetime = filteredData.values(datetime);
+   var city = filteredData.values(city);
+   var state = filteredData.values(state);
+   var country = filteredData.values(country);
+   var shape = filteredData.values(shape);
+   var duration = filteredData.values(duration);
+   var comments = filteredData.values(comments);
      
    d3.select(".table table-striped")
     .append("li").text(`datetime: ${datetime}`)
